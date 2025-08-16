@@ -1,11 +1,5 @@
 // next.config.js
 module.exports = {
-    async rewrites() {
-        return [
-          {
-            source: '/api/:path*',
-            destination: 'https://api.example.com/:path*',
-          },
-        ]
-      },
-  };
+  // Removed the rewrites configuration that was redirecting local API calls
+  // to external domain, which was causing the workStore invariant error
+};
